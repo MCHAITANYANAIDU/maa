@@ -5,21 +5,201 @@
   body{
     background-color:#dee6e9 ;
  }
+ nav {
+    background: #257187;
+    height: 80vh;
+    width: 100vw;
+  }
+  
+  label.logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  a.active,
+  a:hover {
+    color: black;
+    transition: .5s;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+  
+    nav ul li a {
+        font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+  
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+  
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+  
+    nav ul li a {
+        font-size: 20px;
+    }
+  
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+  
+    #check:checked ~ ul {
+        left: 0;
+    }
+  }
+  
+  /* Nav body text styling */ 
+  .text {
+    color: white; 
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .text > h3 {
+    color: #0A4453;
+    font-size: 50%;
+  }
+  
+  /* Search bar styling */
+  .input-box {
+    position: relative;
+    height: 70px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+  }
+  
+  .input-box .uil-search {
+    color: #007bff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .input-box button {
+    padding: 9px 15px;
+    background: #007bff;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+/* Topic boxes styling */
+.boxes {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .box1, .box2 {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box1 img, .box2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }  
+
+  ------------------------
+
+   
  .bodybox1{
     text-align: center;
+    
+    
      
  }
- .bodybox1 {
-    text-align: center;
-  }
   
   .bodybox1 h1 {
     margin-bottom: 20px; /* add some space between h1 and h3 */
   }
   
   .bodybox1 h3 {
-    display: inline-block; /* display h3 elements inline */
+    display:inline-block; /* display h3 elements inline */
     margin: 0 20px; /* add some gap between h3 elements */
+    background-color: #007bff;
+
   }
  .bodybox2{
      display: flex;
